@@ -1,0 +1,8 @@
+tensorflow
+tensorflow-hub
+tensorflow-model-optimization
+numpy
+matplotlib
+scikit-learn
+pillow
+tqdm
