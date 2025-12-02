@@ -1,14 +1,48 @@
+<p align="center">
+
+  <img src="https://img.shields.io/badge/Waste%20Classification-4CAF50?style=for-the-badge&logo=recycle&logoColor=white&colorA=4CAF50&colorB=81C784" />
+
+  <img src="https://img.shields.io/badge/Computer%20Vision-2196F3?style=for-the-badge&logo=opencv&logoColor=white&colorA=2196F3&colorB=64B5F6" />
+
+  <img src="https://img.shields.io/badge/Machine%20Learning-FF9800?style=for-the-badge&logo=tensorflow&logoColor=white&colorA=FF9800&colorB=FFB74D" />
+
+  <img src="https://img.shields.io/badge/Deep%20Learning-9C27B0?style=for-the-badge&logo=keras&logoColor=white&colorA=9C27B0&colorB=BA68C8" />
+
+  <img src="https://img.shields.io/badge/TFLite-0288D1?style=for-the-badge&logo=google&logoColor=white&colorA=0288D1&colorB=4FC3F7" />
+
+  <img src="https://img.shields.io/badge/VLM-673AB7?style=for-the-badge&logo=huggingface&logoColor=white&colorA=673AB7&colorB=9575CD" />
+
+  <img src="https://img.shields.io/badge/SmolVLM-512DA8?style=for-the-badge&logo=huggingface&logoColor=white&colorA=512DA8&colorB=9575CD" />
+
+  <img src="https://img.shields.io/badge/Hugging%20Face-F9D649?style=for-the-badge&logo=huggingface&logoColor=000&colorA=F9D649&colorB=FDD835" />
+
+  <img src="https://img.shields.io/badge/Real--Time-00C853?style=for-the-badge&logo=fastapi&logoColor=white&colorA=00C853&colorB=69F0AE" />
+
+  <img src="https://img.shields.io/badge/IoT-455A64?style=for-the-badge&logo=raspberrypi&logoColor=white&colorA=455A64&colorB=90A4AE" />
+
+</p>
+
+
+
+
+
 # ♻️ Waste Segregation Bot: Dual Classification System
 
-This repository presents a dual-approach solution for real-time waste classification into five core categories: Organic, Inorganic, Metal, Electronic, and Others.
+This repository presents a powerful, dual-approach solution for real-time waste classification into five core categories: Organic, Inorganic, Metal, Electronic, and Others.
 
-It provides two distinct pipelines:
+The project is designed for both high-performance deployment on constrained devices and robust, flexible classification using modern AI models.
 
-## Classical Computer Vision (TensorFlow/Keras): Optimized for training custom models and deployment on edge device
+# 🌟 Architecture Overview
 
-ces (via TFLite).
+## This project features two independent and complementary pipelines:
 
-Modern Vision-Language Model (Hugging Face SmolVLM): Leveraging zero-shot natural language prompts for robust, high-accuracy classification without extensive custom training.
+1. Classical Computer Vision (TensorFlow/Keras)
+
+##### Core Feature: High speed, low memory footprint, ideal for edge computing.
+
+2. Modern Vision-Language Model (Hugging Face SmolVLM)
+
+##### Core Feature: Exceptional generalization and language-guided reasoning.
 
 # 📦 Core Waste Categories
 
@@ -143,4 +177,11 @@ Usage: A window will open showing the webcam feed with a blue bounding box (Regi
         ├── inference.py        # using Keras or TFLite
         ├── inference2.py       # VLM: Single-frame classification using SmolVLM
         └── test.py             # VLM: Stable, real-time webcam classification using SmolVLM
+
+# 📄 License
+
+This project is licensed under the **MIT License**
+
+See the [`LICENSE`](./LICENSE) file for full details.
+
 
