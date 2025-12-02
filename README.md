@@ -74,10 +74,9 @@ You need a Python environment (3.8+ recommended).
 
 Since this project uses both TensorFlow/Keras and PyTorch/Hugging Face, you need to install all required libraries.
 
-Note: The provided requirements.txt is incomplete. Please use the expanded set below.
-
 Create a new file named full_requirements.txt and add the following:
 
+```bash
 tensorflow
 tensorflow-hub
 tensorflow-model-optimization
@@ -89,13 +88,13 @@ tqdm
 opencv-python
 torch
 transformers
-
+```
 
 
 Now, install them:
-
+```
 pip install -r full_requirements.txt
-
+```
 
 
 #### 2. Dataset Setup (For Training Only)
@@ -115,9 +114,9 @@ This pipeline is ideal for training a highly optimized model for embedded system
 The main.py script handles data loading, class mapping, transfer learning with ResNet50, and TFLite conversion.
 
 Run Training:
-
+```
 python "waste classification/src/main.py"
-
+```
 
 
 Output: This will generate two files:
@@ -133,9 +132,9 @@ The inference.py script uses the trained model to perform real-time classificati
 Set Model Path: Ensure MODEL_PATH in inference.py points to your saved model (e.g., "waste_classifier.tflite").
 
 Run Inference:
-
+```
 python "waste classification/src/inference.py"
-
+```
 
 
 ## 🧠 Pipeline 2: Modern VLM (SmolVLM-256M-Instruct)
@@ -147,9 +146,9 @@ This pipeline uses a powerful Vision-Language Model for potentially higher out-o
 This script captures a single image from the webcam and classifies it.
 
 Run Script:
-
+```
 python "waste classification/src/inference2.py"
-
+```
 
 
 Output: Prints the predicted category to the console.
@@ -159,9 +158,9 @@ Output: Prints the predicted category to the console.
 This script provides a continuous, more stable real-time webcam feed with classification, using a prediction history (deque) to stabilize the output and reduce flicker.
 
 Run Script:
-
+```
 python "waste classification/src/test.py"
-
+```
 
 
 Usage: A window will open showing the webcam feed with a blue bounding box (Region of Interest) and the stabilized prediction text. Press q to quit.
