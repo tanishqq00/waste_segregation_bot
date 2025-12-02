@@ -168,15 +168,17 @@ Usage: A window will open showing the webcam feed with a blue bounding box (Regi
 
 ## 📁 Repository Structure
 
+```bash
 .
-
-└── waste classification/
+└── waste-classification/
     ├── requirements.txt
     └── src/
-        ├── main.py            
-        ├── inference.py        # using Keras or TFLite
-        ├── inference2.py       # VLM: Single-frame classification using SmolVLM
-        └── test.py             # VLM: Stable, real-time webcam classification using SmolVLM
+        ├── main.py                     # Entry point for running the full pipeline
+        ├── inference.py                # Image classification using Keras/TFLite model
+        ├── inference2.py               # Vision-Language Model (SmolVLM) single-frame inference
+        └── test.py                     # Real-time webcam classification using SmolVLM
+```
+
 
 ## 📄 License
 
