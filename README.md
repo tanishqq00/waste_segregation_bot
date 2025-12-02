@@ -12,8 +12,6 @@ Modern Vision-Language Model (Hugging Face SmolVLM): Leveraging zero-shot natura
 
 # 📦 Core Waste Categories
 
-## All models are trained/prompted to classify objects into one of the following 2 categories:
-
 ### Organic
 
 Biodegradable waste.
