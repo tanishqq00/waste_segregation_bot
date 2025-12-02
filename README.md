@@ -38,7 +38,7 @@ Textiles, rubber, mixed materials.
 
 You need a Python environment (3.8+ recommended).
 
-1. Update Dependencies
+### 1. Update Dependencies
 
 Since this project uses both TensorFlow/Keras and PyTorch/Hugging Face, you need to install all required libraries.
 
@@ -66,7 +66,7 @@ pip install -r full_requirements.txt
 
 
 
-2. Dataset Setup (For Training Only)
+### 2. Dataset Setup (For Training Only)
 
 For the classical model training (main.py), you must provide your dataset.
 
@@ -74,11 +74,11 @@ Create a directory named RealWaste (or any name, and update DATA_DIR in main.py)
 
 Place your image data inside, organized into subdirectories representing your original class names (e.g., RealWaste/Plastic, RealWaste/Food Organics).
 
-🛠️ Pipeline 1: Classical ML (ResNet50 + TFLite)
+# 🛠️ Pipeline 1: Classical ML (ResNet50 + TFLite)
 
 This pipeline is ideal for training a highly optimized model for embedded systems.
 
-A. Training the Model
+### A. Training the Model
 
 The main.py script handles data loading, class mapping, transfer learning with ResNet50, and TFLite conversion.
 
@@ -94,7 +94,7 @@ waste_classifier.h5 (Full Keras Model)
 
 waste_classifier.tflite (Optimized TFLite Model)
 
-B. Real-Time Inference with Keras/TFLite
+### B. Real-Time Inference with Keras/TFLite
 
 The inference.py script uses the trained model to perform real-time classification from your webcam.
 
@@ -110,7 +110,7 @@ python "waste classification/src/inference.py"
 
 This pipeline uses a powerful Vision-Language Model for potentially higher out-of-distribution performance without needing a local dataset.
 
-A. Single-Shot Classification (inference2.py)
+### A. Single-Shot Classification (inference2.py)
 
 This script captures a single image from the webcam and classifies it.
 
@@ -122,7 +122,7 @@ python "waste classification/src/inference2.py"
 
 Output: Prints the predicted category to the console.
 
-B. Stable Real-Time Classification (test.py)
+### B. Stable Real-Time Classification (test.py)
 
 This script provides a continuous, more stable real-time webcam feed with classification, using a prediction history (deque) to stabilize the output and reduce flicker.
 
